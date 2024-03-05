@@ -14,6 +14,7 @@ Extends `payloadcms` with the ability to export all collection's data to CSV or 
 import { exportCollectionsPlugin } from "@newesissrl/payload-exportcollections-plugin";
 
 export default buildConfig({
+    serverUrl:process.env.PAYLAOD_PUBLIC_SERVER_URL //serverUrl must be set
     ....
     plugins: [exportCollectionsPlugin(config?)],
     i18n: {
